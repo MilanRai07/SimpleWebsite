@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  /* --------------------------for navbar container---------------------------- */
+  .MainNavCont{
+    display: flex;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color:#0D8F4F;
+    color:#fff;
+    font-weight: bold;
+    height: 70px;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+  /*for Logo*/
+  .rotate{
+    animation: rotate 2s linear infinite; 
+  }
+  @keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+  
+  
+  /* SPINNER JUST FOR DEMO */
+   .spinner{
+    display:inline-block; width: 50px; height: 50px;
+    border-radius: 50%;
+    box-shadow: inset -2px 0 0 2px #0bf;
+  } 
+  .logoimg{
+     font-size: 30px;
+     color:#E2D1A7;
+  }
+  .logo{
+    display:flex;
+    align-items: center;
+    color: #fff;
+  }
+  /* for menus*/
+  .NavItem{
+    flex-grow: 1;
+    text-align: center;
+    
+  }
+  .NavLink{
+    text-decoration: none;
+    color:#fff;
+  }
+  .NavItem1{
+    flex-grow: 2;
+  }
+  .NavLink{
+    padding:25px;
+  }
+  .NavLink:hover{
+   background-color:#107869; 
+  }
+  .active{
+    color:black;
+    background-color: #107869;
+  }
+  /*for HamburgerMenubutton*/
+  .HamburgerMenu{
+  display: none;
+  font-size: 40px;
+  align-items: center;
+  justify-items: center;
+  }
+  /*---menu with show?-----*/
+  .HamMenu{
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color:black;
+    
+  }
+  .HamMenu>div:hover{
+    color:#fff;
+    background-color:#107869 ;
+    transition: 0.7s all ease-in-out;
+  }
+  .HamMenu>div{
+    border-bottom: 1px solid #08313A;
+  }
+  .OtherMenu{
+    font-size: small;
+  }
+  .OtherMenu>div:hover{
+    background-color: #107869; 
+  }
+ 
+  @media (max-width:790px) {
+     /*-----------for small screen less than 768px(NavBar)------*/
+    .HamburgerMenu{
+      display:block;
+    }
+    .NavItem{
+      display: none;
+    }
+    .NavItem1{
+      display: block;
+    }
+  }
+  /*--------for all component-------*/
+  .ForPadding{
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+@media(min-width:786px) and (max-width: 883px) {
+  .OtherMenu{
+    display: none;
+  }
+  .MainNavCont{
+    font-size: x-small;
+  }
+}
+@media(min-width:883px) and (max-width:992px){
+.MainNavCont{
+  font-size: small;
+}
+}

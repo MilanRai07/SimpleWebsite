@@ -1,0 +1,123 @@
+.FormMainBody{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url('/public/bernabeu.jpeg');
+  background-size: contain;
+}
+.FormMainContainer{
+  z-index: 10;
+  margin-top: 20px;
+  margin:0 auto;
+  width: 500px;
+  color:#fff;
+  padding: 50px;
+  border-radius: 7px;
+  background: rgb(19,35,47,0.9);
+}
+.FormChoose{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   text-align: center;
+   border: 1px solid black;
+   cursor: grab;
+   background-color: #48514f;
+   border-radius: 7px;
+}
+.activeOne{
+    background-color: #1ab188;
+    border-radius: 7px;
+}
+.FormChoose>div:hover{
+   background-color: #1ab188;
+   border-radius: 7px;
+   transition: 0.8s all ease-in-out;
+}
+.FormChoose>div>h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.FormSet{
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.LoginForm{
+    margin-top: 6rem;
+}
+.FormSet>h2{
+    margin-bottom: 30px;
+}
+.FormDiv>Div{
+    margin-bottom: 30px;
+}
+.FormDiv>Div>input{
+    padding:10px;
+    border-radius: 7px;
+    width:300px;
+    border-color: #a0b3b0;
+    background-color:#13232f;
+    color:rgb(227, 223, 223);
+    border-style: solid;
+}
+.FormDiv>Div>Div>input{
+    padding:10px;
+    border-radius: 7px;
+    width:300px;
+    border-color: #a0b3b0;
+    background-color:#13232f;
+    color:rgb(227, 223, 223);
+    border-style: solid;
+}
+.FormDiv>Div>input:focus{
+    outline: none!important;
+    border:2px solid #1ab188;
+}
+.FormDiv>Div>Div>input:focus{
+    outline: none!important;
+    border:2px solid #1ab188;
+}
+.FormDiv>div:nth-child(1)>div>input{
+  width:210px;    
+}
+.Name{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.FormBtn{
+    margin-top: 50px;
+}
+.FormBtn>button{
+    font-weight: bold;
+    font-size: 17px;
+    padding:15px;
+    width:120px;
+    border-radius: 7px;
+    color:#fff;
+    background-color:#1ab188;
+    cursor: grab;
+    margin-bottom: -30px;
+}
+.FormBtn>button:hover{
+    background-color:#0a8363;
+}
+.forCenter{
+    display: flex;
+    align-items: center;
+}
+.rotate{
+    animation: rotate 2s linear infinite; 
+  }
+  @keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+.spinner{
+    margin-top: 15px;
+    display:inline-block; 
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:1.5px 0 0 1.5px #0bf;
+  }

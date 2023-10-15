@@ -1,0 +1,131 @@
+.MainBSecIndexDiv {
+    margin-top: 40px;
+}
+
+.MainBasketBall {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    row-gap: 30px;
+
+}
+
+.ForBasketball {
+    background-color: #c85bab;
+}
+
+/*-----------------BU Cards-----------------*/
+.BasketballCard {
+    box-shadow: 5px 5px 10px 5px #ccb3b3;
+    border-radius: 7px;
+    text-align: center;
+    min-height: 340px;
+    max-height: 340px;
+}
+
+.BasketballCard:hover {
+    transform: scale(1.01);
+}
+
+.BasketImgDiv {
+    width: 100%;
+    object-fit: contain;
+    background-color: aqua;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.BTitle {
+    min-height: 50px;
+    max-height: 50px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+.BDate {
+    min-height: 30px;
+    max-height: 30px;
+    margin-bottom: -1px;
+}
+
+.ForUFC {
+    background-color: rgb(200, 77, 77);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .BasketballCard {
+        min-height: 290px;
+    }
+
+    .BasketImgDiv {
+        height: 150px;
+    }
+
+    .BTitle {
+        font-size: 15.5px;
+    }
+
+    .BDate {
+        font-size: 12.5px;
+    }
+}
+
+@media (min-width: 790.98px) and (max-width: 992px) {
+    .BasketballCard {
+        min-height: 250px;
+    }
+
+    .BasketImgDiv {
+        height: 125px;
+    }
+
+    .BTitle {
+        font-size: 15px;
+        overflow: hidden;
+        min-height: 35px;
+        max-height: 35px;
+    }
+
+    .BDate {
+        font-size: 12px;
+    }
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width:576px) and (max-width: 790.98px) {
+    .MainBasketBall {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .BTitle {
+        font-size: 15px;
+        overflow: hidden;
+        min-height: 35px;
+        max-height: 35px;
+    }
+
+    .BDate {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:576px) {
+    .MainBasketBall {
+        grid-template-columns: 1fr;
+    }
+
+    .BTitle {
+        font-size: 15px;
+        overflow: hidden;
+        min-height: 35px;
+        max-height: 35px;
+    }
+
+    .BDate {
+        font-size: 12px;
+    }
+}

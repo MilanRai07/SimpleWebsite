@@ -1,0 +1,182 @@
+  .MainCont1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+
+  }
+  /*----------------------MainCard----------------------*/
+  .HomeB1{
+    height:200px;
+    box-shadow: 9px 9px 9px #ccb3b3;
+    border-radius: 7px;
+ }
+ .MainCImg{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+ }
+ .InMCI{
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  transition: 0.7s all ease-in-out;
+ }
+ .InMCI:hover{
+  transform: scale(1.1);
+ }
+ /*----for Big Image----------*/
+ .HomeB1:nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 420px;
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.TitleBg{
+  bottom:50px;
+  padding:10px;
+  font-size: medium;
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCDate{
+  padding:10px;
+  font-size: medium;
+
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCSport{
+  padding:10px;
+  font-size: medium;
+  
+ }
+ /*---------for rest image---------*/
+ .TitleBg{
+  position: absolute;
+  bottom:20px;
+  width: 100%;
+  color:#fff;
+  background-color:rgba(0, 0, 0, 0.7);
+  padding:5px;
+  font-size: 11px;
+ }
+ .MainCDate{
+  position: absolute;
+  top:20px;
+  right: 20px;
+  color:#fff;
+  font-size: 10px;
+  background-color:#0D8F4F;
+  padding: 5px;
+  border-radius: 7px;
+ }
+ .MainCSport{
+  position: absolute;
+  top:20px;
+  left: 20px;
+  color:#fff;
+  font-size: 10px;
+  background: none;
+  padding: 5px;
+  border-radius:7px;
+  cursor:grab;
+ }
+
+ @media (min-width: 790.98px) and (max-width: 991.98px) {
+  .HomeB1:nth-child(1){
+    height: 350px;
+   }
+   .HomeB1{
+    height:165px;
+ }
+ .TitleBg{
+  font-size: 9px;
+ }
+ .MainCDate{
+  font-size: 9px;
+ }
+ .MainCSport{
+  font-size: 9px;
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.TitleBg{
+  font-size: small;
+  bottom:20px;
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCDate{
+  font-size: small;
+
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCSport{
+  font-size:small;
+  
+ }
+  }
+
+  /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 790.98px) {
+  
+  .HomeB1:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 200px;
+   }
+   .HomeB1:nth-child(1) .MainCImg>.insideImg>.TitleBg{
+    font-size: 8.5px;
+    bottom:20px;
+   }
+   .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCDate{
+    font-size: 8.5px;
+    padding:5px
+  
+   }
+   .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCSport{
+    font-size: 8.5px;
+    padding:5px;
+   }
+   .TitleBg{
+    font-size: 8.5px;
+   }
+   .MainCDate{
+    font-size: 8.5px;
+   }
+   .MainCSport{
+    font-size: 8.5px;
+   }
+}
+
+@media(max-width:576px){
+  .MainCont1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.HomeB1:nth-child(1){
+  font-size: 9px;
+  bottom:20px;
+  height: 220px;
+ }
+.HomeB1:nth-child(1) .MainCImg>.insideImg>.TitleBg{
+  font-size: 9px;
+  bottom:20px;
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCDate{
+  font-size: 8.5px;
+  padding:5px
+
+ }
+ .HomeB1:nth-child(1) .MainCImg>.insideImg>.MainCSport{
+  font-size: 8.5px;
+  padding:5px;
+ }
+ .TitleBg{
+  font-size: 8.5px;
+ }
+ .MainCDate{
+  font-size: 8.5px;
+ }
+ .MainCSport{
+  font-size: 8.5px;
+ }
+}

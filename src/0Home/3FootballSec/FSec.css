@@ -1,0 +1,279 @@
+.FootballContainer{
+    width:100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows:auto ;
+    column-gap: 15px;
+}
+.FCard{
+    display: flex;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px 5px #ccb3b3;
+    border-radius: 7px;
+    min-height: 150px;
+    max-height:250px;
+}
+.FH2Div
+{
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.FHead{
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #0D8F4F;
+    color: rgb(219, 240, 240);
+}
+.ForFootball{
+    background-color:#1a7489;
+}
+.FImgCont{
+    object-fit: contain;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 150px;
+    max-height: 250px;
+    background-color: aqua;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.Fimg{
+    object-fit: fill;
+    width:100%;
+    height: 100%;
+    border-radius: 7px;
+    transition: 0.7s all ease-in-out;
+}
+.Fimg:hover{
+    transform: scale(1.1);
+}
+.FContent{
+    padding:10px;
+}
+.FTitle{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    min-height: 30px;
+    max-height: 45px;
+}
+.FDate{
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: bold;
+}
+.FNews{
+     margin-bottom: 5px;
+     font-size: 15px;
+     min-height: 35px;
+     max-height: 55px;
+}
+.FButton{
+    font-size: 14px;
+    background-color:#0c7641;
+    padding:7px;
+    color:#fff;
+    border-radius: 3px;
+    margin-top: 4px;
+    border:none;
+    text-align: center;
+}
+.FButton:hover{
+    background-color: #084a29;
+    cursor:grab;
+}
+
+/*------------------sided navbar---------------*/
+.SideNav{
+    text-align: center;
+}
+.InSideNav{
+    margin-bottom: 10px;
+    padding:5px;
+    padding-top: 0px;
+}
+.NavBtn{
+    width: 100%;
+    height: 60px;
+    border-radius: 7px;
+    font-size: medium;
+    font-weight: bold;
+    border:none;
+    color: rgb(194, 234, 234);
+    transition: 0.5s all ease-in-out;
+}
+.NavBtn:hover{
+    cursor:grab;
+    transform: scale(1.06);
+
+}
+.NBF{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Img/soccer.jpg') center;
+}
+.NBB{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Img/basketballs.jpg') top;
+}
+.NBU{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Img/ufcring.jpg') bottom;
+}
+.NBP{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Img/jpg.webp') bottom;
+}
+.NBA{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Img/about us.jpg') bottom;
+}
+.NBC{
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Img/contact.png') center;
+}
+/*=========social media----------------------*/
+.Social{
+    margin-top: 35px;
+
+}
+.SocialHead{
+    margin: 0 auto;
+}
+.Sites{
+    display: flex;
+    justify-content: space-around;
+    margin:5px;
+    margin-top: 45px;
+}
+.sit{
+    font-size: 50px;
+}
+.face{
+    color: #4267B2;
+}
+.face:hover{
+    color:#072a71
+}
+.yout{
+    font-size: 60px;
+    color: #FF0000;
+}
+.yout:hover{
+    color:#a30b0b;
+}
+.inst{
+   color:rgb(210, 115, 204);
+}
+.inst:hover{
+    color:rgb(155, 17, 145);
+}
+.twit{
+    color:#00acee;
+}
+.twit:hover{
+    color:#1d7395;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .FTitle{
+        font-size:15.5px;
+    }  
+    .FDate{
+        font-size: 12.5px;
+    }
+    .FNews{
+        font-size: 13px;
+      }
+    .sit{
+        font-size: 40px;
+    }
+ }
+@media (min-width: 790.98px) and (max-width: 991.98px) {
+    .FImgCont{
+        object-fit: contain;
+        min-width: 250px;
+        max-width: 340px;
+        height: 170px;
+    }  
+     .FCardContainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+    }
+    .FCard{
+        display: block;
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 10px 5px #ccb3b3;
+        border-radius: 7px;
+        min-height: 310px;
+        max-height:310px;
+    }
+    .FTitle{
+        font-size:15px;
+        overflow:hidden;
+        min-height: 35px;
+        max-height: 35px;
+    }  
+    .FDate{
+        font-size: 12px;
+    }
+    .FNews{
+        font-size: 13px;
+        overflow: hidden;
+        min-height: 31px;
+        max-height: 31px;
+      }
+      .FContent{
+        padding:5px;
+      }
+      .FContent>div{
+        text-align: center;
+      }
+      .sit{
+        font-size: 30px;
+    }
+    }
+    /*Small devices (landscape phones, 576px and up)*/
+  @media (max-width: 790.98px) {
+    .FootballContainer{
+        width:100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto ;
+        column-gap: 15px;
+    }
+    .FImgCont{
+        object-fit: contain;
+        min-width: 20px;
+        max-width: 750px;
+        height: 200px;
+    } 
+    .Fimg{
+        object-fit: cover;
+    } 
+     .FCardContainer{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+    .FCard{
+        display: block;
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 10px 5px #ccb3b3;
+        border-radius: 7px;
+        min-height: 310px;
+        max-height:310px;
+    }
+    .FTitle{
+        font-size:15px;
+        overflow:hidden;
+        min-height: 35px;
+        max-height: 35px;
+    }  
+    .FDate{
+        font-size: 12px;
+    }
+    .FNews{
+        display: none;
+      }
+      .FContent{
+        padding:5px;
+      }
+      .FContent>div{
+        text-align: center;
+      }
+    }

@@ -1,0 +1,77 @@
+.ThirdSecMainContainer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.ThirdContents{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+}
+.TSCImgContainer{
+    height: 200px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+.ThirdSecImg{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+.PopCardsThird{
+    max-height:340px ;
+    min-height: 340px;
+    min-width: 309px;
+    max-width: 309px;
+    background-color: #e5f6c8;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    transform: scale(1.1);
+    transition: 1s all ease-in-out;
+    position: absolute;
+    z-index: 10;
+}
+.PImgContThird{
+    object-fit: contain;
+    height:200px;
+    width: 100%;
+    border-radius: 7px;
+}
+.PImgThird{
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    min-width: 309px;
+    max-width: 309px;
+}
+.PTitleCont{
+    text-align:center; 
+    min-height:50px;
+    max-height:50px;
+    min-width: 309px;
+    max-width: 309px;
+}
+.PTitle{
+    font-size: 20px;
+    font-weight: bolder;
+    padding:5px;
+}
+.DnS{
+    padding:10px;
+    font-size: 11px;
+    color:#fff;
+    height:20px;
+}
+.ThirdBtn{
+    font-size: 10px;
+}
+.needed:nth-child(4n-3) .PopCardsThird{
+   transform: scaleY(1.02);
+   transition: 1s all ease-in-out;
+}
+ .needed:nth-child(4n) .PopCardsThird:hover{
+   transform: scaleY(1.02);
+   transition: 1s all ease-in-out;
+}

@@ -1,0 +1,28 @@
+.SecondSecMainCont{
+    margin-top: 40px;
+}
+.SecondSec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.SSCard{
+    max-height:375px ;
+    min-height: 375px;
+    box-shadow: 5px 7px 5px 5px #ccb3b3;
+}
+.SSCard:hover{
+    transform: scale(1.01);
+}
+.SSNewsCont{
+    padding: 5px;
+    min-height:15px;
+    max-height:15px;
+}
+.newPImgCont{
+    height: 200px;
+}
+.AddPTitle{
+    max-height: 55px;
+    min-height: 55px;
+}

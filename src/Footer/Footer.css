@@ -1,0 +1,55 @@
+.FooterMain{
+    background-color:#0D8F4F;
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px;
+}
+.MainNavContFot{
+    display: flex;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    justify-content: space-between;
+    font-weight: bold;
+    padding:40px;
+    
+}
+.NavLinkFot{
+    text-decoration: none;
+    color:black;
+}
+.NavLinkFot:hover{
+    background-color: none;
+    border-bottom: 1px solid black;
+
+}
+.active{
+    background-color: none;
+}
+.socialLink{
+    padding:20px;
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    width:0;
+    margin:0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+.SM{
+    font-size: x-large;
+}
+.fa:hover{
+    color: #2d4471;
+}
+.yo:hover{
+    color: #FF0000;
+}
+.in:hover{
+   color:rgb(210, 115, 204);
+}
+.tw:hover{
+    color:#00acee;
+}

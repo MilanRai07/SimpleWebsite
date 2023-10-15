@@ -1,0 +1,106 @@
+.slider{
+    margin-top: -10px;
+    margin-left: -35px;
+    margin-right: -35px;
+}
+.CaraImgCont{
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    box-shadow: 5px 10px 5px #ccb3b3;
+}
+.CaraImg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(65%);
+}
+.CaraTitle{
+    position: absolute;
+    bottom:250px;
+    left:50px;
+    color:#fff;
+    padding: 5px;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    transition: 0.7s all ease-in-out;
+}
+.CaraDate{
+    background-color: #0D8F4F;
+    padding: 5px;
+    position: absolute;
+    left:50px;
+    bottom:200px;
+    color:#fff;
+    border-radius: 7px;
+    transition:0.7s all ease-in-out;
+}
+.CaraNews{
+     position: absolute;
+     left: 50px;
+     top:400px;
+     width: 50%;
+     text-align: justify;
+     color:#fff;
+}
+.slide{
+    opacity: 0.8;
+    transition-duration: 1s ease;
+}
+.active{
+    opacity: 1;
+    transition-duration: 1s;
+}
+.rightArrow{
+    position: absolute;
+    top:45%;
+    right:32px;
+    font-size: 2rem;
+    color:#0D8F4F;
+    z-index:10;
+    cursor:grab;
+    user-select: none;
+    background-color: black;
+}
+.leftArrow{
+    position: absolute;
+    top:45%;
+    left:32px;
+    font-size: 2rem;
+    color:#0D8F4F;
+    z-index:10;
+    cursor:grab;
+    user-select: none;
+    background-color: black;
+}
+#SlideBtn{
+    position:absolute;
+    bottom:20px;
+    left:50px;
+    padding:10px;
+    background-color:#107869;
+    transition: 1s all ease-in-out;
+}
+#SlideBtn:hover{
+   background-color: #0D8F4F;
+}
+.indicatorCircleDiv{
+    display: flex;
+    gap:5px;
+    position:absolute;
+    bottom:4%;
+    left: 50%;
+    list-style: none;
+}
+.BC{
+    font-size: 50x;
+    font-weight: bold;
+    background-color: #0D8F4F;
+    border-radius: 7px;
+}
+.BCactive{
+    background-color:#107869;
+    border-radius: 7px;
+    border: 0.5px solid black;
+}
